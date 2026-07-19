@@ -1,0 +1,90 @@
+.wrap {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 40px 36px;
+  min-height: 200px;
+}
+
+.quote {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--ink);
+  margin-bottom: 24px;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name {
+  font-weight: 600;
+  text-align: left;
+}
+
+.role {
+  font-size: 0.82rem;
+  color: var(--muted);
+  text-align: left;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.arrow {
+  background: var(--white);
+  border: 1px solid var(--line);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.arrow:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.dots {
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--line);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.dotActive {
+  background: var(--amber);
+  width: 22px;
+  border-radius: 100px;
+  transition: width 0.2s ease;
+}
