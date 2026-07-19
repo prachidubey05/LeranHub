@@ -1,0 +1,55 @@
+.list {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.item {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 18px 20px;
+  font-weight: 600;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.icon {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--paper-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.iconOpen {
+  transform: rotate(45deg);
+  background: var(--amber);
+  color: var(--ink);
+}
+
+.answer {
+  padding: 0 20px 20px;
+  color: var(--muted);
+  margin: 0;
+  font-size: 0.94rem;
+}
