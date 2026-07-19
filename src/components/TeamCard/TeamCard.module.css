@@ -1,0 +1,41 @@
+.card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px 22px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-soft);
+}
+
+.photo {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 16px;
+  border: 3px solid var(--paper-dim);
+}
+
+.name {
+  font-size: 1.05rem;
+  margin-bottom: 2px;
+}
+
+.role {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--mint);
+  margin-bottom: 12px;
+}
+
+.bio {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin: 0;
+}
