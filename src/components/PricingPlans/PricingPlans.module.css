@@ -1,0 +1,112 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.card {
+  position: relative;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 32px 26px;
+  display: flex;
+  flex-direction: column;
+}
+
+.highlight {
+  background: var(--ink);
+  border-color: var(--ink);
+  transform: scale(1.03);
+  box-shadow: var(--shadow-lift);
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  right: 24px;
+  background: var(--amber);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 5px 10px;
+  border-radius: 100px;
+}
+
+.highlight .name,
+.highlight .price .amount {
+  color: var(--white);
+}
+
+.highlight .tagline,
+.highlight .period {
+  color: rgba(245, 246, 251, 0.65);
+}
+
+.highlight .features li {
+  color: rgba(245, 246, 251, 0.85);
+}
+
+.name {
+  font-size: 1.3rem;
+  margin-bottom: 6px;
+}
+
+.tagline {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  min-height: 40px;
+}
+
+.price {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: 24px;
+}
+
+.amount {
+  font-family: var(--font-display);
+  font-size: 2.1rem;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.period {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+  flex: 1;
+}
+
+.features li {
+  font-size: 0.92rem;
+  color: var(--slate);
+  display: flex;
+  gap: 8px;
+}
+
+.features li span {
+  color: var(--mint);
+  font-weight: 700;
+}
+
+@media (max-width: 860px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .highlight {
+    transform: none;
+  }
+}
