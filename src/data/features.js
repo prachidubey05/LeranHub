@@ -28,5 +28,4 @@ const features = [
       "Learn on your own clock — pause, resume, and switch between live and self-paced tracks.",
   },
 ];
-
 export default features;
